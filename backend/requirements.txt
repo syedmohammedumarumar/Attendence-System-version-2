@@ -1,0 +1,7 @@
+django
+djangorestframework
+requests
+beautifulsoup4
+django-cors-headers
+gunicorn
+python-dotenv
