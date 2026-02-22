@@ -34,7 +34,7 @@ function App() {
     <div style={{
       maxWidth: "1200px",
       margin: "0 auto",
-      padding: "2rem 1rem",
+      padding: "clamp(0.5rem, 3vw, 2rem) 0.75rem",
       minHeight: "100vh",
       display: 'flex',
       flexDirection: 'column',

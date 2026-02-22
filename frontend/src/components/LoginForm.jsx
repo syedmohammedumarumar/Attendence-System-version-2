@@ -33,11 +33,9 @@ function LoginForm({ onSubmit, loading }) {
 
   return (
     <div className="animate-fade-in" style={{ display: 'grid', placeItems: 'center', minHeight: '80vh', padding: '1rem' }}>
-      <form onSubmit={handleSubmit} className="glass-card" style={{ maxWidth: '480px', width: '100%', position: 'relative', zIndex: 1 }}>
-        <div style={{ marginBottom: '3rem', textAlign: 'center' }}>
+      <form onSubmit={handleSubmit} className="glass-card" style={{ maxWidth: '480px', width: '100%', position: 'relative', zIndex: 1, margin: '0 auto' }}>
+        <div style={{ textAlign: 'center' }}>
           <div className="mits-ims-logo" style={{
-            fontSize: '3.5rem',
-            marginBottom: '0.5rem',
             background: 'linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
@@ -47,13 +45,13 @@ function LoginForm({ onSubmit, loading }) {
           }}>MITS IMS</div>
           <div style={{
             height: '4px',
-            width: '60px',
+            width: '40px',
             background: 'var(--primary)',
-            margin: '1.5rem auto',
+            margin: '1rem auto',
             borderRadius: '2px',
             opacity: 0.5
           }}></div>
-          <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem', margin: 0, fontWeight: 300 }}>
+          <p style={{ color: 'var(--text-muted)', fontSize: '1rem', marginBottom: '2rem', fontWeight: 300 }}>
             Enter your credentials to access <br /> dashboard
           </p>
         </div>

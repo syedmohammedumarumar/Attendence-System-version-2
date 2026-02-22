@@ -51,11 +51,12 @@ function AttendanceTable({ data }) {
           justifyContent: 'space-between',
           alignItems: 'center',
           padding: '2.5rem',
-          gap: '2rem',
           borderBottom: '1px solid var(--border)'
         }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '2rem', flexWrap: 'wrap', justifyContent: 'center' }}>
-            <CircularProgress percentage={filteredSummary.overall_percentage} />
+            <div className="circular-progress-container">
+              <CircularProgress percentage={filteredSummary.overall_percentage} />
+            </div>
             <div style={{ textAlign: 'left' }}>
               <p style={{ margin: 0, color: 'var(--text-muted)', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
                 Overall Accuracy
@@ -125,55 +126,58 @@ function AttendanceTable({ data }) {
       </div>
 
       {/* Analytics Dashboard - Graph */}
-      <div className="glass-card" style={{ padding: '2rem' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '2.5rem' }}>
+      <div className="glass-card" style={{ padding: '0', overflow: 'hidden' }}>
+        <div style={{ padding: '2rem 2rem 0.5rem 2rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
           <TrendingUp style={{ color: 'var(--primary)' }} />
           <h3 style={{ margin: 0 }}>Attendance Analytics Trend</h3>
         </div>
-        <div className="chart-container" style={{ width: '100%', height: 320 }}>
-          <ResponsiveContainer width="100%" height="100%">
-            <AreaChart data={chartData}>
-              <defs>
-                <linearGradient id="colorPerc" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="5%" stopColor="var(--primary)" stopOpacity={0.3} />
-                  <stop offset="95%" stopColor="var(--primary)" stopOpacity={0} />
-                </linearGradient>
-              </defs>
-              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" vertical={false} />
-              <XAxis
-                dataKey="name"
-                stroke="var(--text-muted)"
-                fontSize={10}
-                tickLine={false}
-                axisLine={false}
-              />
-              <YAxis
-                stroke="var(--text-muted)"
-                fontSize={10}
-                tickLine={false}
-                axisLine={false}
-                domain={[0, 100]}
-              />
-              <Tooltip
-                contentStyle={{
-                  background: 'var(--bg-dark)',
-                  border: '1px solid var(--border)',
-                  borderRadius: '0.75rem',
-                  fontSize: '0.8rem',
-                  boxShadow: '0 10px 15px -3px rgba(0,0,0,0.5)'
-                }}
-                itemStyle={{ color: 'var(--primary)' }}
-              />
-              <Area
-                type="monotone"
-                dataKey="percentage"
-                stroke="var(--primary)"
-                fillOpacity={1}
-                fill="url(#colorPerc)"
-                strokeWidth={3}
-              />
-            </AreaChart>
-          </ResponsiveContainer>
+
+        <div style={{ overflowX: 'auto', padding: '1.5rem 0' }}>
+          <div className="chart-container" style={{ width: '100%', minWidth: '600px', height: 320, padding: '0 2rem' }}>
+            <ResponsiveContainer width="100%" height="100%">
+              <AreaChart data={chartData}>
+                <defs>
+                  <linearGradient id="colorPerc" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="5%" stopColor="var(--primary)" stopOpacity={0.3} />
+                    <stop offset="95%" stopColor="var(--primary)" stopOpacity={0} />
+                  </linearGradient>
+                </defs>
+                <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" vertical={false} />
+                <XAxis
+                  dataKey="name"
+                  stroke="var(--text-muted)"
+                  fontSize={10}
+                  tickLine={false}
+                  axisLine={false}
+                />
+                <YAxis
+                  stroke="var(--text-muted)"
+                  fontSize={10}
+                  tickLine={false}
+                  axisLine={false}
+                  domain={[0, 100]}
+                />
+                <Tooltip
+                  contentStyle={{
+                    background: 'var(--bg-dark)',
+                    border: '1px solid var(--border)',
+                    borderRadius: '0.75rem',
+                    fontSize: '0.8rem',
+                    boxShadow: '0 10px 15px -3px rgba(0,0,0,0.5)'
+                  }}
+                  itemStyle={{ color: 'var(--primary)' }}
+                />
+                <Area
+                  type="monotone"
+                  dataKey="percentage"
+                  stroke="var(--primary)"
+                  fillOpacity={1}
+                  fill="url(#colorPerc)"
+                  strokeWidth={3}
+                />
+              </AreaChart>
+            </ResponsiveContainer>
+          </div>
         </div>
       </div>
 

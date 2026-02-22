@@ -144,7 +144,7 @@ h4 {
   box-shadow:
     0 25px 50px -12px rgba(0, 0, 0, 0.5),
     inset 0 1px 1px rgba(255, 255, 255, 0.05);
-  padding: 3rem;
+  padding: clamp(1.25rem, 5vw, 3rem);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   position: relative;
   overflow: hidden;
@@ -245,6 +245,12 @@ button:disabled {
   animation: fadeIn 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
 }
 
+.mits-ims-logo {
+  font-size: 4.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
   .analytics-header {
@@ -259,48 +265,72 @@ button:disabled {
   }
 
   body {
-    padding: 0.5rem 0;
+    padding: 0.25rem;
   }
 
   .glass-card {
-    padding: 2rem 1.25rem !important;
-    margin: 0.5rem;
-    width: auto !important;
+    padding: 1.5rem 1rem !important;
+    border-radius: 1.5rem !important;
+    margin: 0;
+    width: 100% !important;
   }
 
   h1 {
-    font-size: 2.22rem !important;
+    font-size: 1.8rem !important;
   }
 
   .mits-ims-logo {
-    font-size: 2.8rem !important;
+    font-size: 2.5rem !important;
+    margin-bottom: 0.25rem !important;
   }
 
   .analytics-header {
     flex-direction: column !important;
     text-align: center;
-    padding: 1.5rem !important;
+    padding: 1.5rem 1rem !important;
+    gap: 2rem !important;
   }
 
   .stats-cards-container {
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem !important;
+    justify-content: space-around;
+    gap: 1.5rem !important;
+    width: 100%;
+    padding: 1.25rem !important;
+    background: rgba(255, 255, 255, 0.02) !important;
   }
 
   .chart-container {
-    height: 280px !important;
+    height: 250px !important;
+  }
+
+  table {
+    font-size: 0.85rem;
+  }
+
+  th,
+  td {
+    padding: 1rem 0.75rem !important;
   }
 }
 
 @media (max-width: 480px) {
   .mits-ims-logo {
-    font-size: 2.4rem !important;
+    font-size: 2.2rem !important;
   }
 
   .footer-content {
     flex-direction: column;
-    gap: 2rem !important;
+    gap: 1.5rem !important;
     text-align: center;
+  }
+
+  .footer-content>div {
+    text-align: center !important;
+  }
+
+  .circular-progress-container {
+    transform: scale(0.85);
+    margin-bottom: -1rem;
   }
 }
