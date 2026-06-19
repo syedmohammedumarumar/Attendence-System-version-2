@@ -103,7 +103,7 @@ The user visits the application and is presented with a clean and responsive int
 * Mobile Responsive Layout
 * Fast Loading Experience
 
-![Landing Page](screenshots/landing-page.png)
+<img width="1867" height="847" alt="Screenshot 2026-06-19 115715" src="https://github.com/user-attachments/assets/34d4f9f0-a0b0-41aa-9b67-01be33b92ac6" />
 
 ---
 
@@ -119,7 +119,8 @@ Students enter their college credentials to access their attendance information 
 
 The system validates the credentials and begins fetching attendance data.
 
-![Login Page](screenshots/login-page.png)
+<img width="1710" height="805" alt="s3" src="https://github.com/user-attachments/assets/0a951c44-99ee-4615-bbde-62aeb85c117b" />
+
 
 ---
 
@@ -134,9 +135,6 @@ After authentication, the backend automatically accesses the attendance portal a
 * Subject-wise attendance is extracted.
 * Overall attendance is calculated.
 * Process completes within seconds.
-
-![Loading Screen](screenshots/loading-screen.png)
-
 ---
 
 ### Step 4: Attendance Dashboard
@@ -151,7 +149,8 @@ The application displays attendance information in an easy-to-understand format.
 * Total Classes Conducted
 * Classes Attended
 
-![Dashboard](screenshots/dashboard.png)
+<img width="1827" height="851" alt="s4 dashboard" src="https://github.com/user-attachments/assets/9bbee72a-beb3-4d73-aab3-a027a032ee74" />
+
 
 ---
 
@@ -165,7 +164,8 @@ Students can view detailed attendance information for each individual subject.
 * Monitor attendance trends
 * Take action before attendance shortages occur
 
-![Subject Breakdown](screenshots/subject-wise.png)
+<img width="1842" height="827" alt="s5" src="https://github.com/user-attachments/assets/2b3d84fd-f51a-42ca-9bb2-38aaa6606e66" />
+
 
 ---
 
@@ -179,8 +179,6 @@ The application is fully responsive and works seamlessly across devices.
 * Tablets
 * Laptops
 * Desktop Systems
-
-![Mobile View](screenshots/mobile-view.png)
 
 ---
 
