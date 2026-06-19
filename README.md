@@ -91,6 +91,167 @@ The Automated Attendance System streamlines the entire process by:
 * REST APIs
 
 ---
+## 🖼️ Project Walkthrough
+
+### Step 1: Landing Page
+
+The user visits the application and is presented with a clean and responsive interface.
+
+#### Features
+
+* Modern UI Design
+* Mobile Responsive Layout
+* Fast Loading Experience
+
+![Landing Page](screenshots/landing-page.png)
+
+---
+
+### Step 2: Login with College Credentials
+
+Students enter their college credentials to access their attendance information securely.
+
+#### Process
+
+1. Enter Roll Number
+2. Enter Password
+3. Click "Check Attendance"
+
+The system validates the credentials and begins fetching attendance data.
+
+![Login Page](screenshots/login-page.png)
+
+---
+
+### Step 3: Automated Attendance Retrieval
+
+After authentication, the backend automatically accesses the attendance portal and retrieves attendance records.
+
+#### What Happens Behind The Scenes?
+
+* User credentials are received securely.
+* Attendance data is fetched automatically.
+* Subject-wise attendance is extracted.
+* Overall attendance is calculated.
+* Process completes within seconds.
+
+![Loading Screen](screenshots/loading-screen.png)
+
+---
+
+### Step 4: Attendance Dashboard
+
+The application displays attendance information in an easy-to-understand format.
+
+#### Dashboard Information
+
+* Overall Attendance Percentage
+* Subject-wise Attendance
+* Attendance Statistics
+* Total Classes Conducted
+* Classes Attended
+
+![Dashboard](screenshots/dashboard.png)
+
+---
+
+### Step 5: Subject-wise Breakdown
+
+Students can view detailed attendance information for each individual subject.
+
+#### Benefits
+
+* Identify low-attendance subjects
+* Monitor attendance trends
+* Take action before attendance shortages occur
+
+![Subject Breakdown](screenshots/subject-wise.png)
+
+---
+
+### Step 6: Mobile Experience
+
+The application is fully responsive and works seamlessly across devices.
+
+#### Supported Devices
+
+* Mobile Phones
+* Tablets
+* Laptops
+* Desktop Systems
+
+![Mobile View](screenshots/mobile-view.png)
+
+---
+
+## ⚙️ System Workflow
+
+```text
+Student
+   │
+   ▼
+Login Page
+   │
+   ▼
+Enter Credentials
+   │
+   ▼
+Backend Processing
+   │
+   ▼
+Attendance Retrieval
+   │
+   ▼
+Attendance Calculation
+   │
+   ▼
+Dashboard Display
+   │
+   ▼
+Subject-wise Analysis
+```
+
+---
+
+## 📊 Project Impact
+
+### Before
+
+* Manual Login
+* Multiple Navigation Steps
+* Manual Calculations
+* Time Consuming
+
+### After
+
+* Single Login
+* Automated Retrieval
+* Instant Calculations
+* Results in Seconds
+
+---
+
+## 🏗️ Architecture Overview
+
+```text
+React Frontend
+      │
+      ▼
+Django REST API
+      │
+      ▼
+Attendance Scraper Engine
+      │
+      ▼
+College Attendance Portal
+      │
+      ▼
+Processed Attendance Data
+      │
+      ▼
+Student Dashboard
+```
+
 
 ## 📂 Project Structure
 
