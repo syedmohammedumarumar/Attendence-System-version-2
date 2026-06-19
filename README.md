@@ -318,20 +318,6 @@ npm run dev
 
 ---
 
-## 👨‍💻 Developer
-
-**Syed Mohammed Umar**
-
-Full Stack Developer | MERN Stack | Django | Python
-
-LinkedIn:
-https://www.linkedin.com/in/syed-mohammed-umar/
-
-GitHub:
-https://github.com/syedmohammedumarumar
-
----
-
 ## ⭐ Support
 
 If you found this project useful, consider giving it a star on GitHub.
