@@ -77,7 +77,7 @@ The Automated Attendance System streamlines the entire process by:
 
 ### Backend
 
-* Django
+* Django REST framework
 * Python
 
 ### Data Processing
